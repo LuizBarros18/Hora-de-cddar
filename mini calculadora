@@ -1,0 +1,23 @@
+#include <stdio.h> // Para printf (mostrar) e scanf (ler)
+
+int main() {
+    float num1, num2, soma; // Variáveis para guardar os números e o resultado (float pra aceitar decimais)
+
+    // 1. Pedir o primeiro número
+    printf("Digite o primeiro número: ");
+    scanf("%f", &num1); // Lê um número float do teclado e guarda em num1
+                      // O '&' antes de num1 é necessário para scanf saber ONDE guardar o valor
+
+    // 2. Pedir o segundo número
+    printf("Digite o segundo número: ");
+    scanf("%f", &num2); // Lê o segundo número e guarda em num2
+
+    // 3. Calcular a soma
+    soma = num1 + num2; // Usa o operador de adição '+'
+
+    // 4. Mostrar o resultado
+    printf("A soma de %.2f e %.2f é: %.2f\n", num1, num2, soma);
+    // Mostra os números originais e a soma, formatada com 2 casas decimais
+
+    return 0; // Termina o programa
+}
